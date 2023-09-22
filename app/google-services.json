@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "217664793994",
+    "project_id": "dashboard-bb552",
+    "storage_bucket": "dashboard-bb552.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217664793994:android:72a3e5ebe54cadb7ec2c73",
+        "android_client_info": {
+          "package_name": "com.example.dashboard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCt3_DzQ86H1XSqPQf8gJN7GXBCH4Q9few"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
