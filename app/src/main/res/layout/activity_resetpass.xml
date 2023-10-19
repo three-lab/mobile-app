@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:gravity="center"
+    tools:context=".forgotpass">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/lock"
+        android:outlineAmbientShadowColor="@color/black">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/resettpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:text="Buat Password Baru!!"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#000000">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/no1"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Password wajib minimal terdiri dari 8 karakter termasuk huruf besar, karakter kecil, angka dan simbol"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        tools:ignore="TextSizeCheck">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textSize="16dp"
+        android:text="Password"
+        android:textStyle="normal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/frame_abu"
+        android:hint="Masukkan password"
+        android:inputType="text"
+        android:paddingTop="14dp"
+        android:maxLines="1"
+        android:paddingStart="10dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/abugelap"
+        android:textSize="16sp">
+    </EditText>
+
+    <TextView
+        android:id="@+id/confirmpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textSize="16dp"
+        android:text="Konfirmasi Password"
+        android:textStyle="normal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/cnfrmpass"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/frame_abu"
+        android:hint="Masukkan kembali password"
+        android:inputType="text"
+        android:paddingTop="14dp"
+        android:maxLines="1"
+        android:paddingStart="10dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/abugelap"
+        android:textSize="16sp">
+    </EditText>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/otp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/frame_abu"
+        android:backgroundTint="@color/primary"
+        android:text="Reset Password"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginTop="40dp"
+        android:paddingTop="16dp"
+        android:paddingStart="115dp"
+        android:paddingEnd="80dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:maxLines="4"
+        >
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/panah"
+        android:drawablePadding="10dp"
+        android:text="kembali ke login"
+        android:textSize="14dp"
+        tools:ignore="TextSizeCheck">
+
+    </TextView>
+
+</LinearLayout>
