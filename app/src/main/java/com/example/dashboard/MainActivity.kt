@@ -1,7 +1,7 @@
 package com.example.dashboard
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 
@@ -14,12 +14,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setUpTabBar() {
-        val adapter = TabPageAdapter(this, tabLayout.tabCount)
+        val viewPager = findViewById<ViewPager2>(R.id.viewPager)
+        val TabLayout = findViewById<TabLayout>(R.id.TabLayout)
+
+        val adapter = TabPageAdapter(this, TabLayout.tabCount)
         viewPager.adapter = adapter
 
         viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
-                tabLayout.selectTab(tabLayout.getTabAt(position))
+                TabLayout.selectTab(TabLayout.getTabAt(position))
             }
         })
     }

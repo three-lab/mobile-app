@@ -12,7 +12,7 @@
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/tabLayout">
+        android:layout_above="@+id/TabLayout">
 
     </androidx.viewpager2.widget.ViewPager2>
     <ImageView
@@ -101,7 +101,7 @@
 
 
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabLayout"
+        android:id="@+id/TabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:tabMaxWidth="0dp"
